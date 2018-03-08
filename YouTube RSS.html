@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+	Name :
+				YouTube RSS
+	Author :
+				▄▄▄▄▄▄▄  ▄ ▄▄ ▄▄▄▄▄▄▄
+				█ ▄▄▄ █ ██ ▀▄ █ ▄▄▄ █
+				█ ███ █ ▄▀ ▀▄ █ ███ █
+				█▄▄▄▄▄█ █ ▄▀█ █▄▄▄▄▄█
+				▄▄ ▄  ▄▄▀██▀▀ ▄▄▄ ▄▄
+				 ▀█▄█▄▄▄█▀▀ ▄▄▀█ █▄▀█
+				 █ █▀▄▄▄▀██▀▄ █▄▄█ ▀█
+				▄▄▄▄▄▄▄ █▄█▀ ▄ ██ ▄█
+				█ ▄▄▄ █  █▀█▀ ▄▀▀  ▄▀
+				█ ███ █ ▀▄  ▄▀▀▄▄▀█▀█
+				█▄▄▄▄▄█ ███▀▄▀ ▀██ ▄
+-->
+<html>
+	<head>
+		<title>YouTube RSS</title>
+		<meta charset="UTF-8">
+	</head>
+	Drag & drop this link to your bookmarks toolbar : <a href="javascript:void%20function(){var%20e=/(%3F:https|http)\:\/\/(%3F:[\w]+\.)%3Fyoutube\.com\/(%3F:c\/|user\/){1}([a-zA-Z0-9\-\_]{1,})/g,t=%22https://www.youtube.com/feeds/videos.xml%3Fuser=%22,o=/(%3F:https|http)\:\/\/(%3F:[\w]+\.)%3Fyoutube\.com\/channel\/([a-zA-Z0-9\-\_]{1,})/g,l=%22https://www.youtube.com/feeds/videos.xml%3Fchannel_id=%22,n=/(%3F:https|http)\:\/\/(%3F:[\w]+\.)%3Fyoutube\.com(%3F:.*)list=([a-zA-Z0-9\-\_]+)%26%3F/g,s=%22https://www.youtube.com/feeds/videos.xml%3Fplaylist_id=%22,u=window.location.href;if(e.test(u)){e.lastIndex=0;var%20i=e.exec(u)[1];console.log(%22YouTube%20user%20ID%20:%20%22+i+%22\nUser%20RSS%20feed%20URL%20:%20%22+t+i),null!=window.prompt('Click%20%22OK%22%20to%20open%20'+document.querySelector(%22%23channel-title%22).textContent+%22's%20RSS%20feed%20URL%20:%22,t+i)%26%26window.open(t+i,%22_blank%22)}else%20if(o.test(u)){o.lastIndex=0;var%20a=o.exec(u)[1];console.log(%22YouTube%20channel%20ID%20:%20%22+a+%22\nChannel%20RSS%20feed%20URL%20:%20%22+l+a),null!=window.prompt('Click%20%22OK%22%20to%20open%20'+document.querySelector(%22%23channel-title%22).textContent+%22's%20RSS%20feed%20URL%20:%22,l+a)%26%26window.open(l+a,%22_blank%22)}else%20if(n.test(u)){n.lastIndex=0;var%20c=n.exec(u)[1];console.log(%22YouTube%20playlist%20ID%20:%20%22+c+%22\nPlaylist%20RSS%20feed%20URL%20:%20%22+s+c),null!=window.prompt('Click%20%22OK%22%20to%20open%20playlist%20RSS%20feed%20URL%20:',s+c)%26%26window.open(s+c,%22_blank%22)}else%20alert(%22Oops%20!%20Not%20a%20YouTube%20user,%20channel%20or%20playlist%20URL.%22)}();">YouTube RSS</a>
+</html>
