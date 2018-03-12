@@ -51,7 +51,7 @@ if (regUserID.test(sCurrentURL)) {
 	regUserID.lastIndex = 0;
 	var sUserID = regUserID.exec(sCurrentURL)[1];
 	console.log("YouTube user ID : " + sUserID + "\n" + "User RSS feed URL : " + sUserFeedURL + sUserID);
-	if (window.prompt("Click \"OK\" to open " + document.querySelector("#channel-title").textContent + "'s RSS feed URL :",sUserFeedURL + sUserID) != null) {
+	if (window.prompt("Click \"OK\" to open " + document.querySelector("h1 #channel-title").textContent + "'s RSS feed URL :",sUserFeedURL + sUserID) != null) {
 		window.open(sUserFeedURL + sUserID, "_blank");
 	}
 
@@ -60,7 +60,7 @@ if (regUserID.test(sCurrentURL)) {
 	regChannelID.lastIndex = 0;
 	var sChannelID = regChannelID.exec(sCurrentURL)[1];
 	console.log("YouTube channel ID : " + sChannelID + "\n" + "Channel RSS feed URL : " + sChannelFeedURL + sChannelID);
-	if (window.prompt("Click \"OK\" to open " + document.querySelector("#channel-title").textContent + "'s RSS feed URL :",sChannelFeedURL + sChannelID) != null) {
+	if (window.prompt("Click \"OK\" to open " + document.querySelector("h1 #channel-title").textContent + "'s RSS feed URL :",sChannelFeedURL + sChannelID) != null) {
 		window.open(sChannelFeedURL + sChannelID, "_blank");
 	}
 
